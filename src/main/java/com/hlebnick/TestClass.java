@@ -14,5 +14,11 @@ public class TestClass {
 			inputArray[i] = random.nextDouble();
 		}
 		System.out.println(inputArray.length);
+		
+		System.out.println("Is sorted: " + isSorted(inputArray));
+	}
+	
+	public static boolean isSorted(Double[] array) {
+		return false;
 	}
 }
