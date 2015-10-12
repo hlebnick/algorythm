@@ -15,10 +15,17 @@ public class TestClass {
 		}
 		System.out.println(inputArray.length);
 		
-		System.out.println("Is sorted: " + isSorted(inputArray));
+		Double[] resultArray = SelectionSort.sort(inputArray);
+		
+		System.out.println("Is sorted: " + isSorted(resultArray));
 	}
 	
 	public static boolean isSorted(Double[] array) {
-		return false;
+		for (int i = 0; i < array.length; i++) {
+			if (i != array.length - 1 && array[i] > array[i+1]) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
