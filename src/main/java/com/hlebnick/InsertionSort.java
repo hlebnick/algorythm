@@ -2,7 +2,7 @@ package com.hlebnick;
 
 public class InsertionSort {
 	
-	public double[] sort(double[] inputArray) {
+	public static double[] sort(double[] inputArray) {
 		for (int i = 1; i < inputArray.length; i++) {
 			for (int j = i; 
 					j > 0 && inputArray[j] < inputArray[j - 1];
