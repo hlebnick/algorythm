@@ -10,7 +10,7 @@ public class SelectionSort {
 					min = j;
 				}
 			}
-			Double temp = inputArray[i];
+			double temp = inputArray[i];
 			inputArray[i] = inputArray[min];
 			inputArray[min] = temp;
 		}
