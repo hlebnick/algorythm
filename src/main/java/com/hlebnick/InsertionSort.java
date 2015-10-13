@@ -7,8 +7,8 @@ public class InsertionSort {
 			for (int j = i; 
 					j > 0 && inputArray[j] < inputArray[j - 1];
 					j--) {
-				double temp = inputArray[i];
-				inputArray[i] = inputArray[j];
+				double temp = inputArray[j];
+				inputArray[j] = inputArray[j - 1];
 				inputArray[j - 1] = temp;
 			}
 		}

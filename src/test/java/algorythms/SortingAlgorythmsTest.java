@@ -22,4 +22,12 @@ public class SortingAlgorythmsTest {
 		double[] resultArray = InsertionSort.sort(inputArray);
 		Assert.assertTrue(SortingUtil.isSorted(resultArray));
 	}
+	
+	private void printArray(double[] array) {
+		StringBuilder sb = new StringBuilder("");
+		for (int i = 0; i < array.length; i++) {
+			sb.append(" ").append(array[i]);
+		}
+		System.out.println(sb);
+	}
 }
