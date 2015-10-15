@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import com.hlebnick.InsertionSort;
 import com.hlebnick.SelectionSort;
+import com.hlebnick.ShellSort;
 import com.hlebnick.SortingUtil;
 
 public class SortingAlgorythmsTest {
@@ -20,6 +21,13 @@ public class SortingAlgorythmsTest {
 	public void insertionSortTest() {
 		double[] inputArray = SortingUtil.getRandomArray(100);
 		double[] resultArray = InsertionSort.sort(inputArray);
+		Assert.assertTrue(SortingUtil.isSorted(resultArray));
+	}
+	
+	@Test
+	public void shellSortTest() {
+		double[] inputArray = SortingUtil.getRandomArray(100);
+		double[] resultArray = ShellSort.sort(inputArray);
 		Assert.assertTrue(SortingUtil.isSorted(resultArray));
 	}
 	
