@@ -14,5 +14,14 @@ public class SortAlgorythmsCompare {
 		double[] shellSortResult = ShellSort.sort(inputArray);
 		endTime = System.currentTimeMillis();
 		System.out.println("Shell sort time: " + (endTime - startTime));
+		
+		boolean equals = true;
+		for(int i = 0; i < inputArray.length; i++) {
+			if (insertionSortResult[i] != shellSortResult[i]) {
+				equals = false;
+				break;
+			}
+		}
+		System.out.println("Results equals: " + equals);
 	}
 }
